@@ -44,65 +44,30 @@ function pago_cuotas(entrada_cuotas){
     }
 }
 
-//Seleccion del combo
-let entrada_combo = prompt("ingrese el numero de combo de los productos que desea adquirir - 1 , 2 o 3 -");
-let monto= " ";
-seleccion_productos(entrada_combo);
+//CICLO CON WHILE, mientras que el usuario ingrese el numero de 1 2 o 3 seguira iterando - 
 
-//Calculo del monto a pagar en cada cuota
+let entrada_combo = "";
 let precio_combo = seleccion_productos (entrada_combo);
-let entrada_cuotas = prompt (" ingrese el numero de cuotas a pagar - 1 , 2 o 3 -");
-pago_cuotas(entrada_cuotas);
-
-
+let entrada_cuotas = "";
 let cuotas = pago_cuotas(entrada_cuotas);
-alert("El combo numero " + entrada_combo + " tiene un valor de " + precio_combo + ". Debera pagar " + 
-            entrada_cuotas + " cuotas sin interes de $" + cuotas + " ." ) 
 
 
-/*Estos ciclos no funcionan, en ambos me salta error con la variable precio_combo cuando pasa a calcular el monto a pagar en cada cuota
-
-CICLO CON DO...WHILE, mientras que el usuario ingrese el numero de 1 2 o 3 seguira iterando - 
-
-
-do {
-   //Seleccion del combo
-     let entrada_combo = prompt("ingrese el numero de combo de los productos que desea adquirir - 1 , 2 o 3 -");
-     let monto= " ";
-     seleccion_productos(entrada_combo);
-     
-     //Calculo del monto a pagar en cada cuota
-     let precio_combo = seleccion_productos (entrada_combo);
-     let entrada_cuotas = prompt (" ingrese el numero de cuotas a pagar - 1 , 2 o 3 -");
-     pago_cuotas(entrada_cuotas);
-     
-     
-     let cuotas = pago_cuotas(entrada_cuotas);
-     alert("El combo numero " + entrada_combo + " tiene un valor de " + precio_combo + ". Debera pagar " + 
-                 entrada_cuotas + " cuotas sin interes de $" + cuotas + " ." ) 
-}
-while  (entrada_combo == 1 || entrada_combo == 2 || entrada_combo == 3 )
-
-
-CICLO CON FOR, se cumple el ciclo 3 veces seguidas y corta -
-
-
-for ( let i = 0 ; i < 3 ; i++){
+while  (entrada_combo <= 3) {
 
      //Seleccion del combo
-let entrada_combo = prompt("ingrese el numero de combo de los productos que desea adquirir - 1 , 2 o 3 -");
+entrada_combo = prompt("ingrese el numero de combo de los productos que desea adquirir - 1 , 2 o 3 -");
 let monto= " ";
 seleccion_productos(entrada_combo);
 
 //Calculo del monto a pagar en cada cuota
-let precio_combo = seleccion_productos (entrada_combo);
-let entrada_cuotas = prompt (" ingrese el numero de cuotas a pagar - 1 , 2 o 3 -");
+precio_combo = seleccion_productos (entrada_combo);
+entrada_cuotas= prompt (" ingrese el numero de cuotas a pagar - 1 , 2 o 3 -");
 pago_cuotas(entrada_cuotas);
 
 
-let cuotas = pago_cuotas(entrada_cuotas);
+cuotas = pago_cuotas(entrada_cuotas);
 console.log("El combo numero " + entrada_combo + " tiene un valor de " + precio_combo + " .Debera pagar " + 
             entrada_cuotas + " cuotas sin interes de $" + cuotas + " ." )
 }
 
-  */
+ 
