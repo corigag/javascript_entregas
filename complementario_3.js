@@ -51,7 +51,7 @@ function modalidad(productosFiltro){
 //Esta parte del codigo es la que no cumple la funcion que quisiera, cuando se ejecuta, muestra "sin stock" solo al primer elemento del array 
 //de productos. y no deshabilita tampoco los botones.
 
-let botonCarrito = document.getElementById("addCarrito")
+let botonCarrito = document.getElementsByTagName("a");
 console.log(botonCarrito)
 
 function sinStock(arrayProductos){
@@ -73,3 +73,4 @@ function sinStock(arrayProductos){
 };
 
 sinStock(productos)
+
