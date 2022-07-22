@@ -7,6 +7,7 @@ const productos = [
         stock: 80,
         categoria: 'higiene',
         retornable: false,
+        imagen: "./imagenes/muestra.jpg",
     }, 
     {
         id:2,
@@ -16,6 +17,7 @@ const productos = [
         stock: 0,
         categoria: 'higiene',
         retornable: false,
+        imagen: "./imagenes/muestra.jpg",
     },
     {
         id:3,
@@ -25,6 +27,7 @@ const productos = [
         stock: 25,
         categoria: 'cuidado de la piel',
         retornable: true,
+        imagen: "./imagenes/muestra.jpg",
     },
     {
         id:4,
@@ -34,6 +37,7 @@ const productos = [
         stock: 25,
         categoria: 'cuidado de la piel',
         retornable: true,
+        imagen: "./imagenes/muestra.jpg",
     },
     {
         id:5,
@@ -43,6 +47,7 @@ const productos = [
         stock: 19,
         categoria: 'cuidado de la piel',
         retornable: true,
+        imagen: "./imagenes/muestra.jpg",
     },
     {
         id:6,
@@ -52,6 +57,7 @@ const productos = [
         stock: 0,
         categoria:'higiene',
         retornable: true,
+        imagen: "./imagenes/muestra.jpg",
     },
     {
         id:7,
@@ -61,6 +67,7 @@ const productos = [
         stock: 15,
         categoria:'cuidado de la piel',
         retornable: true,
+        imagen: "./imagenes/muestra.jpg",
     },
     {
         id:8,
@@ -70,5 +77,6 @@ const productos = [
         stock: 50,
         categoria: 'higiene',
         retornable: false,
+        imagen: "./imagenes/muestra.jpg",
     },
 ]
